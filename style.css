@@ -1,0 +1,548 @@
+/* =========================================
+   СБРОС СТИЛЕЙ
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   ОСНОВНЫЕ СТИЛИ
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #ffffff;
+
+    color: #575757;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-width: 320px;
+}
+
+
+/* =========================================
+   ВЕРХНЯЯ ЧАСТЬ
+========================================= */
+
+.hero {
+
+    width: calc(100% - 100px);
+
+    max-width: 1689px;
+
+    height: 514px;
+
+    margin: 51px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 430px 1fr;
+
+    column-gap: 135px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   ФОТО ПРОФИЛЯ
+========================================= */
+
+.profile-photo {
+
+    width: 430px;
+
+    height: 426px;
+
+    background: #e5e5e5;
+
+    border-radius: 70px;
+}
+
+
+/* =========================================
+   НАВИГАЦИЯ
+========================================= */
+
+.navigation {
+
+    height: 148px;
+
+    background: #e5e5e5;
+
+    border-radius: 18px;
+
+    padding: 27px 88px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+}
+
+
+/* Кнопки меню */
+
+.navigation a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 61px;
+
+    padding: 0 21px;
+
+    background: #1e57e8;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 17px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+}
+
+
+/* Наведение */
+
+.navigation a:hover {
+
+    background: #164bd1;
+
+}
+
+
+/* =========================================
+   ОСНОВНЫЕ БЛОКИ
+========================================= */
+
+main {
+
+    width: calc(100% - 100px);
+
+    max-width: 1689px;
+
+    margin: 0 auto;
+}
+
+
+/* Общий стиль секций */
+
+.section {
+
+    width: 100%;
+
+    background: #e5e5e5;
+
+    border-radius: 18px;
+
+    margin-bottom: 28px;
+
+    padding-left: 41px;
+
+    padding-right: 41px;
+}
+
+
+/* Заголовки */
+
+.section h2 {
+
+    color: #1e57e8;
+
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   БЛОК "ОБО МНЕ"
+========================================= */
+
+.about {
+
+    height: 273px;
+
+    padding-top: 39px;
+}
+
+
+.about h2 {
+
+    margin-bottom: 30px;
+}
+
+
+.about p {
+
+    font-size: 27px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   БЛОК "НАВЫКИ"
+========================================= */
+
+.skills {
+
+    height: 274px;
+
+    padding-top: 39px;
+}
+
+
+.skills h2 {
+
+    margin-bottom: 25px;
+}
+
+
+.skills ul {
+
+    padding-left: 45px;
+
+    font-size: 27px;
+
+    line-height: 1.04;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   БЛОК "МОИ РАБОТЫ"
+========================================= */
+
+.works {
+
+    height: 322px;
+
+    padding-top: 39px;
+}
+
+
+.works h2 {
+
+    margin-bottom: 48px;
+}
+
+
+/* Контейнер проектов */
+
+.projects {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 61px;
+}
+
+
+/* Карточка проекта */
+
+.project {
+
+    width: 428px;
+
+    height: 182px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px 25px;
+}
+
+
+/* Название проекта */
+
+.project h3 {
+
+    color: #111111;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   БЛОК "КОНТАКТЫ"
+========================================= */
+
+.contacts {
+
+    height: 150px;
+
+    margin-bottom: 0;
+
+    padding-top: 39px;
+}
+
+
+.contacts h2 {
+
+    margin-bottom: 25px;
+}
+
+
+.contacts p {
+
+    font-size: 27px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+/* Telegram */
+
+.contacts a {
+
+    color: #1e57e8;
+
+    text-decoration: none;
+}
+
+
+.contacts a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   АДАПТИВНОСТЬ
+   Планшеты
+========================================= */
+
+@media (max-width: 1250px) {
+
+    .hero {
+
+        grid-template-columns: 330px 1fr;
+
+        column-gap: 50px;
+    }
+
+
+    .profile-photo {
+
+        width: 330px;
+
+        height: 330px;
+    }
+
+
+    .navigation {
+
+        padding-left: 35px;
+
+        padding-right: 35px;
+    }
+
+
+    .navigation a {
+
+        font-size: 21px;
+    }
+
+
+    .projects {
+
+        gap: 25px;
+    }
+
+
+    .project {
+
+        width: 31%;
+    }
+
+}
+
+
+/* =========================================
+   АДАПТИВНОСТЬ
+   Телефоны
+========================================= */
+
+@media (max-width: 800px) {
+
+    /* Верхняя часть */
+
+    .hero {
+
+        width: calc(100% - 32px);
+
+        height: auto;
+
+        margin-top: 16px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    /* Фото */
+
+    .profile-photo {
+
+        width: 100%;
+
+        height: 260px;
+
+        border-radius: 35px;
+    }
+
+
+    /* Меню */
+
+    .navigation {
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 18px;
+
+        gap: 10px;
+
+        border-radius: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .navigation a {
+
+        min-height: 48px;
+
+        font-size: 18px;
+
+        border-radius: 13px;
+
+        padding: 0 16px;
+    }
+
+
+    /* Основной контент */
+
+    main {
+
+        width: calc(100% - 32px);
+
+        margin-top: 20px;
+    }
+
+
+    /* Секции */
+
+    .section {
+
+        height: auto;
+
+        min-height: 0;
+
+        padding: 28px 24px;
+    }
+
+
+    /* Заголовки */
+
+    .section h2 {
+
+        font-size: 29px;
+    }
+
+
+    /* Текст */
+
+    .about p,
+    .skills ul,
+    .contacts p,
+    .project h3 {
+
+        font-size: 19px;
+    }
+
+
+    .about h2,
+    .skills h2,
+    .contacts h2 {
+
+        margin-bottom: 20px;
+    }
+
+
+    .works h2 {
+
+        margin-bottom: 25px;
+    }
+
+
+    /* Проекты */
+
+    .projects {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 16px;
+    }
+
+
+    .project {
+
+        width: 100%;
+
+        height: 180px;
+
+        padding: 22px;
+    }
+
+
+    /* Контакты */
+
+    .contacts {
+
+        margin-bottom: 20px;
+    }
+
+}
